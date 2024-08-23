@@ -74,12 +74,12 @@ export default function Services(){
                 </div>
             </div>
 
-            <div className="w-[50%]">
-                <img src={vidaa} alt="pic" className='h-[85vh]'/>
+            <div className="w-[50%] sm: w-[92%] sm:mx-auto  mt-4">
+                <img src={vidaa} alt="pic" className='h-[85vh] sm: h-[85vh]'/>
             </div>
         </div>
 
-        <div className="flex mt-20 sm:mt-96 sm:flex sm:flex-col justify-evenly">
+        <div className="flex mt-20 sm:mt-5 sm:mx-4 sm:flex sm:flex-col justify-evenly">
             <div className="mr-8 sm:hidden">
                 <img src={webvidaa} alt="pic" className='h-[85vh]'/>
             </div>
@@ -121,12 +121,12 @@ export default function Services(){
                     <button className="text-[14px] bg-[midnightblue] text-white px-4 py-1 rounded-full font-barlow mt-4" onClick={goToContactPage}>Get In Touch</button>
                 </div>
             </div>
-            <div className="w-[50%] mr-8 sm:mr-0 md:hidden sm:visible sm:w-full">
-                <AnimationVideo vidaa={webvidaa}/>
+            <div className="w-[50%] sm: w-full  mt-4">
+                <img src={webvidaa} alt="pic" className='h-[85vh] sm: h-[85vh]'/>
             </div>
         </div>
 
-        <div className="flex mt-20 sm:mt-96 sm:flex sm:flex-col justify-evenly mb-8">
+        <div className="flex mt-20 sm:mt-10 mx-4 sm:flex sm:flex-col justify-evenly mb-8">
             <div className="ml-8 mt-10 sm:w-full sm:ml-1 sm:mx-2 mr-8">
                 <p className="text-2xl font-barlow font-bold mb-6">Management System Development</p>
                 <p className="text-[14px]">Revolutionize the way you manage your business with our advanced management systems. From CRM to ERP, our solutions streamline operations, enhance productivity, and drive growth.</p>

@@ -62,8 +62,8 @@ export default function AboutPage(){
         </div>
 
         <p className="text-center mt-16 font-bold text-2xl font-poppins sm:text-center">What We Do</p>
-        <div className="mt-4 mx-6 flex items-center justify-center sm:flex-col sm:mx-2 sm:bg-[midnightblue] sm:text-white sm:rounded w-[60%] flex-wrap mx-auto">
-            <div className='sm:shadow-custom-medium py-8 rounded md:w-[30%]'>
+        <div className="mt-4 mx-6 flex items-center justify-center sm:flex-col sm:mx-2 sm:bg-[midnightblue] sm:text-white sm:rounded w-[60%] sm:w-full flex-wrap mx-auto">
+            <div className='sm:shadow-custom-medium py-8 rounded md:w-[30%] sm:w-full'>
                 <div className='flex justify-center items-center'>
                     <div className='bg-blue-800 p-2 rounded mb-6'>
                         <img src={app} alt='pic' className='h-6'/>
@@ -74,7 +74,7 @@ export default function AboutPage(){
                 <p className="font-barlow text-[14px] my-1 text-start mx-4 sm:text-center md:hidden">At Codeworks, app development isn’t just a service; it’s a craft. We specialize in creating mobile and web applications that aren’t just functional—they’re downright addictive. Our apps are built with a deep understanding of user behavior, ensuring they not only meet your needs but also exceed your expectations. Whether it’s a sleek mobile app that users can’t put down or a powerful web application that drives your business, we bring your ideas to life with precision and flair.</p>
             </div>
 
-            <div className='sm:my-4 sm:shadow-custom-medium py-8 rounded md:w-[30%]'>
+            <div className='sm:my-4 sm:shadow-custom-medium py-8 rounded md:w-[30%] sm:w-full'>
                 <div className='flex justify-center items-center'>
                     <div className='bg-green-500 p-2 rounded mb-4'>
                         <img src={web} alt='pic' className='h-6'/>

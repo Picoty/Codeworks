@@ -9,7 +9,7 @@ export default function ContactsPage(){
 
     const location = useLocation();
     const [hideBackButton, setHideBackButton] = useState(false);
-    const [dynamicWidth, setDynamicWidth] = useState('mt-96');
+    const [dynamicWidth, setDynamicWidth] = useState('mt-10');
     const [dynamicTopPx, setDynamicTopPx] = useState('pt-44');
 
     const [dynamicFooter, setDynamicFooter] = useState(false);
@@ -19,7 +19,7 @@ export default function ContactsPage(){
     useEffect(() => {
         console.log(`The current location is: ${location.pathname}`);
         if(location.pathname == '/contacts'){
-            setDynamicWidth('mt-0');
+            setDynamicWidth('mt-96');
             setHideBackButton(true);
             setDynamicTopPx('pt-16');
             setDynamicFooter(true);
@@ -53,11 +53,11 @@ export default function ContactsPage(){
         </div> */}
 
         <div className='sm:flex-col' id="contacts-section">
-            <div className='sm:mr-2 sm:mx-4'>
+            <div className='sm:mr-2 sm:mx-1'>
                 <form>
-                    <div className='flex w-full justify-center p-8'>
-                        <div className='mx-10'>
-                            <div className='flex flex-col mr-8'>
+                    <div className='flex w-full sm:flex-col justify-center p-8'>
+                        <div className='mx-10 sm: mx-0'>
+                            <div className='flex flex-col mr-8 sm:mr-2'>
                                     <label className='font-barlow text-[12px] font-bold text-white'>Full Name</label>
                                     <input
                                         placeholder='Full name'
@@ -65,7 +65,7 @@ export default function ContactsPage(){
                                     />
                             </div>
 
-                            <div className='flex flex-col mr-8'>
+                            <div className='flex flex-col mr-8 sm:mr-2'>
                                     <label className='font-barlow text-[12px] font-bold text-white'>Email</label>
                                     <input
                                         placeholder='Johndoe@gmail.com'
@@ -73,7 +73,7 @@ export default function ContactsPage(){
                                     />
                             </div>
 
-                            <div className='flex flex-col mr-8'>
+                            <div className='flex flex-col mr-8 sm:mr-2'>
                                     <label className='font-barlow text-[12px] font-bold text-white'>Phone Number</label>
                                     <input
                                         placeholder='+254786949756'
@@ -130,8 +130,8 @@ export default function ContactsPage(){
                             </div>
                         </div>
 
-                        <div className='w-[30%]'>
-                            <div className='flex flex-col mr-8'>
+                        <div className='w-[30%] sm:w-full'>
+                            <div className='flex flex-col mr-8 sm: mr-0 mt-4'>
                                     <label className='font-barlow text-[12px] font-bold text-white'>Message</label>
                                     <textarea
                                         rows={8}
@@ -139,7 +139,7 @@ export default function ContactsPage(){
                                         className='border border-slate-300 rounded px-2 font-barlow text-[12px] py-1 my-2'
                                     />
                             </div>
-                            <div className='w-[40%]'>
+                            <div className='w-[40%] sm:w-full'>
                                 <button className='text-[14px] bg-[midnightblue] text-white rounded font-barlow px-4 py-1 my-4 w-full'>Send Message</button>
                             </div>
                         </div>

@@ -13,7 +13,7 @@ import { FaWhatsapp, FaTwitter, FaEnvelope } from 'react-icons/fa';
 export default function CustomFooter() {
     return (
         <footer className='bg-blue-900 py-6 text-white'>
-            <div className='mx-10  flex justify-between'>
+            <div className=' mx-10  flex justify-between sm:flex-col'>
                 
                 <div className='flex-1 min-w-[200px]'>
                     
@@ -46,7 +46,7 @@ export default function CustomFooter() {
                 
                 
 
-                <div className='flex-1 min-w-[200px]'>
+                <div className='flex-1 min-w-[200px] mt-4 mb-2'>
                     <p className='font-bold mb-2'>Social Info</p>
                     <p className='text-sm mb-2'>Our social media links</p>
                     <div className='flex gap-4 mb-4'>
@@ -61,7 +61,7 @@ export default function CustomFooter() {
                         <a href="tel:+254713248097" className='text-sm font-semibold'>+254713248097</a>
                     </div>
                 </div>
-                <div className='flex-1 min-w-[200px]'>
+                <div className='flex-1 min-w-[200px] mb-2'>
                 <p className='font-bold mb-2'>Quick Links</p>
                 <ul className='list-disc list-inside'>
                     <li><a href='/' className='permalink no-underline hover:underline'>Home</a></li>
@@ -72,7 +72,7 @@ export default function CustomFooter() {
 
 
                 </div>
-                <div className='flex-1 min-w-[200px]'>
+                <div className='flex-1 min-w-[200px] mt-4 mb-4'>
                     <p className='font-bold mb-2'>Our Services</p>
                     <ul className='list-disc list-inside'>
                         <li className='text-sm mb-1'>App Development</li>
@@ -87,7 +87,7 @@ export default function CustomFooter() {
                 
                 
 
-                <div className='flex-1 min-w-[200px]'>
+                <div className='flex-1 min-w-[200px] mb-2'>
                     <p className='font-bold mb-2'>Visit Us</p>
                     <p className='text-sm mb-2'>Chat with us in person at our Thika HQ</p>
                     <div className='flex items-center'>
